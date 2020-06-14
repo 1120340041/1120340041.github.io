@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1. 物理像素 | 个人笔记</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.37902ef0.css" as="style"><link rel="preload" href="/assets/js/app.8a76d55b.js" as="script"><link rel="preload" href="/assets/js/6.d2af2d68.js" as="script"><link rel="prefetch" href="/assets/js/10.a4039df4.js"><link rel="prefetch" href="/assets/js/11.5974f0f8.js"><link rel="prefetch" href="/assets/js/12.27cf8ffd.js"><link rel="prefetch" href="/assets/js/13.fea7540d.js"><link rel="prefetch" href="/assets/js/14.49d72fe0.js"><link rel="prefetch" href="/assets/js/15.8645270f.js"><link rel="prefetch" href="/assets/js/16.d1154499.js"><link rel="prefetch" href="/assets/js/17.be47a230.js"><link rel="prefetch" href="/assets/js/18.e9372b2d.js"><link rel="prefetch" href="/assets/js/19.5bbc7d50.js"><link rel="prefetch" href="/assets/js/2.161ee98d.js"><link rel="prefetch" href="/assets/js/20.a3279ec6.js"><link rel="prefetch" href="/assets/js/21.d2b64f72.js"><link rel="prefetch" href="/assets/js/22.25d3c8a4.js"><link rel="prefetch" href="/assets/js/23.a963db8c.js"><link rel="prefetch" href="/assets/js/24.3b984e2c.js"><link rel="prefetch" href="/assets/js/25.34760acd.js"><link rel="prefetch" href="/assets/js/26.c29fed1c.js"><link rel="prefetch" href="/assets/js/27.481e2c18.js"><link rel="prefetch" href="/assets/js/28.9107ed10.js"><link rel="prefetch" href="/assets/js/29.efe7d57e.js"><link rel="prefetch" href="/assets/js/3.181f599c.js"><link rel="prefetch" href="/assets/js/30.f6868954.js"><link rel="prefetch" href="/assets/js/31.1c2e0c14.js"><link rel="prefetch" href="/assets/js/4.3d49b7f8.js"><link rel="prefetch" href="/assets/js/5.3f264bda.js"><link rel="prefetch" href="/assets/js/7.cf51b1fa.js"><link rel="prefetch" href="/assets/js/8.1bdd3edf.js"><link rel="prefetch" href="/assets/js/9.c0163414.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.37902ef0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人笔记</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><!---->  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>javaScript</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>React</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>webpack</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>babel</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>http</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>算法</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>杂货</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/blog/comprehensivePeripheral.html" class="active sidebar-link">移动端适配</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>代码规范</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h3 id="_1-物理像素"><a href="#_1-物理像素" aria-hidden="true" class="header-anchor">#</a> 1. 物理像素</h3> <p>设备真实的像素(1920*1680这些)</p> <h3 id="_2-设备独立像素"><a href="#_2-设备独立像素" aria-hidden="true" class="header-anchor">#</a> 2. 设备独立像素</h3> <p>就是类似iphone6 375*650这种(模拟器上一般是这些)</p> <h3 id="_3-dpr"><a href="#_3-dpr" aria-hidden="true" class="header-anchor">#</a> 3. DPR</h3> <p>设备像素比device pixel ratio简称dpr，即物理像素和设备独立像素的比值。
+在web中，浏览器为我们提供了window.devicePixelRatio来帮助我们获取dpr。
+在css中，可以使用媒体查询min-device-pixel-ratio，区分dpr：</p> <h3 id="_4-布局视口"><a href="#_4-布局视口" aria-hidden="true" class="header-anchor">#</a> 4. 布局视口</h3> <p>布局视口(layout viewport)：当我们以百分比来指定一个元素的大小时，它的计算值是由这个元素的包含块计算而来的。当这个元素是最顶级的元素时，它就是基于布局视口来计算的。
+所以，布局视口是网页布局的基准窗口，在PC浏览器上，布局视口就等于当前浏览器的窗口大小（不包括borders 、margins、滚动条）。
+在移动端，布局视口被赋予一个默认值，大部分为980px，这保证PC的网页可以在手机浏览器上呈现，但是非常小，用户可以手动对网页进行放大。
+我们可以通过调用document.documentElement.clientWidth / clientHeight来获取布局视口大小。</p> <h3 id="_5-视觉视口"><a href="#_5-视觉视口" aria-hidden="true" class="header-anchor">#</a> 5. 视觉视口</h3> <p>视觉视口(visual viewport)：用户通过屏幕真实看到的区域。
+视觉视口默认等于当前浏览器的窗口大小（包括滚动条宽度）。
+当用户对浏览器进行缩放时，不会改变布局视口的大小，所以页面布局是不变的，但是缩放会改变视觉视口的大小。
+例如：用户将浏览器窗口放大了200%，这时浏览器窗口中的CSS像素会随着视觉视口的放大而放大，这时一个CSS像素会跨越更多的物理像素。
+所以，布局视口会限制你的CSS布局而视觉视口决定用户具体能看到什么。</p> <h3 id="_6-页面缩放系数"><a href="#_6-页面缩放系数" aria-hidden="true" class="header-anchor">#</a> 6.页面缩放系数</h3> <p>上面在介绍CSS像素时曾经提到页面的缩放系数 = CSS像素 / 设备独立像素，实际上说页面的缩放系数 = 理想视口宽度 / 视觉视口宽度更为准确。
+页面的缩放系数 = CSS像素 / 设备独立像素</p> <h3 id="_7-javascript拼接图片url"><a href="#_7-javascript拼接图片url" aria-hidden="true" class="header-anchor">#</a> 7. JavaScript拼接图片url</h3> <p>使用window.devicePixelRatio获取设备像素比，遍历所有图片，替换图片地址：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> dpr <span class="token operator">=</span> window<span class="token punctuation">.</span>devicePixelRatio<span class="token punctuation">;</span>
+<span class="token keyword">const</span> images <span class="token operator">=</span>  document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+images<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">img</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+  img<span class="token punctuation">.</span>src<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">@</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>dpr<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">x.</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_8-vw相关单位"><a href="#_8-vw相关单位" aria-hidden="true" class="header-anchor">#</a> 8.vw相关单位</h3> <p>vw : 1vw 等于视口宽度的1%
+vh : 1vh 等于视口高度的1%
+vmin : 选取 vw 和 vh 中最小的那个
+vmax : 选取 vw 和 vh 中最大的那个</p> <h3 id="_9-如何设置font-size"><a href="#_9-如何设置font-size" aria-hidden="true" class="header-anchor">#</a> 9.如何设置font-size</h3> <p>看你怎么设置1rem的值是多少</p> <h3 id="_10-bfc"><a href="#_10-bfc" aria-hidden="true" class="header-anchor">#</a> 10.BFC</h3> <p>块级格式化上下文</p> <p>满足下列条件之一就可触发BFC
+　　【1】根元素，即HTML元素
+　　【2】float的值不为none
+　　【3】overflow的值不为visible
+　　【4】display的值为inline-block、table-cell、table-caption
+　　【5】position的值为absolute或fixed</p> <p>BFC布局规则：
+1.内部的Box会在垂直方向，一个接一个地放置。
+2.Box垂直方向的距离由margin决定。属于同一个BFC的两个相邻Box的margin会发生重叠
+3.每个元素的margin box的左边， 与包含块content box的左边相接触(对于从左往右的格式化，否则相反)。即使存在浮动也是如此。
+4.BFC的区域不会与float box重叠。
+5.BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此。
+6.计算BFC的高度时，浮动元素也参与计算</p> <p>BFC有哪些作用：
+1自适应两栏布局</p> <p>2可以阻止元素被浮动元素覆盖
+3可以包含浮动元素——清除内部浮动
+4.分属于不同的BFC时可以阻止margin重叠</p> <p>div会被float覆盖，而文本却没有被float覆盖，是因为float当初设计的时候就是为了使文本围绕在浮动对象的周围。</p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">6/14/2020, 4:15:25 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/vue/vueInterview.html" class="prev">
+          vue常见问题
+        </a></span> <span class="next"><a href="/spec/html.html">
+          HTML 代码规范
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.8a76d55b.js" defer></script><script src="/assets/js/6.d2af2d68.js" defer></script>
+  </body>
+</html>
